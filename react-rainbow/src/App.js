@@ -23,3 +23,13 @@ function App(){
     )
 }
 
+    const addColor = (newColor) => {
+        setColors([...colors, newColor])
+    }
+
+    return (
+        <div className="App">
+            {colorMap}
+            <ColorForm addColor={addColor} />
+        </div>
+    )
